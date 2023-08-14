@@ -6,7 +6,7 @@ export const inter = Inter({
 });
 
 export const syncopate = Syncopate({
-  weight: ['400', '700'],
+  weight: ['700'],
   style: ['normal'],
   subsets: ['latin'],
   display: 'swap',
