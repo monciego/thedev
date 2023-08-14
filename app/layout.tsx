@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { inter } from './fonts';
+import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
   title: 'THEDEV',
@@ -13,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>{children}</body>
+    <html lang='en' suppressHydrationWarning>
+      <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+        <body className={inter.className}>{children}</body>
+      </ThemeProvider>
     </html>
   );
 }
