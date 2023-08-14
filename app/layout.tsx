@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { inter } from './fonts';
 import { ThemeProvider } from '@/components/theme-provider';
+import Navbar from '@/components/shared/navbar';
 
 export const metadata: Metadata = {
   title: 'THEDEV',
@@ -16,7 +17,10 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <Navbar />
+          {children}
+        </body>
       </ThemeProvider>
     </html>
   );
