@@ -20,18 +20,10 @@ const Navbar = ({}: NavbarProps): JSX.Element => {
       <Logo />
       <nav className='flex items-center space-x-4'>
         <div className='space-x-4 hidden sm:flex'>
-          <Link onClick={handleOpen} href={`/`}>
-            Home
-          </Link>
-          <Link onClick={handleOpen} href={`/about`}>
-            Company
-          </Link>
-          <Link onClick={handleOpen} href={`/services`}>
-            Services
-          </Link>
-          <Link onClick={handleOpen} href={`/contact`}>
-            Connect
-          </Link>
+          <Link href={`/`}>Home</Link>
+          <Link href={`/about`}>Company</Link>
+          <Link href={`/services`}>Services</Link>
+          <Link href={`/contact`}>Connect</Link>
         </div>
         {open ? (
           <Cross1Icon
