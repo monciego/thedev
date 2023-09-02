@@ -20,10 +20,18 @@ const Navbar = ({}: NavbarProps): JSX.Element => {
       <Logo />
       <nav className='flex items-center space-x-4'>
         <div className='space-x-4 hidden sm:flex'>
-          <Link href={`/`}>Home</Link>
-          <Link href={`/about`}>Company</Link>
-          <Link href={`/services`}>Services</Link>
-          <Link href={`/contact`}>Connect</Link>
+          <Link onClick={handleOpen} href={`/`}>
+            Home
+          </Link>
+          <Link onClick={handleOpen} href={`/about`}>
+            Company
+          </Link>
+          <Link onClick={handleOpen} href={`/services`}>
+            Services
+          </Link>
+          <Link onClick={handleOpen} href={`/contact`}>
+            Connect
+          </Link>
         </div>
         {open ? (
           <Cross1Icon
@@ -48,24 +56,28 @@ const Navbar = ({}: NavbarProps): JSX.Element => {
           <div className='absolute shadow-md dark:bg-slate-950 bg-white top-[4.2rem] rounded-md left-4 right-4 p-4'>
             <div className='space-y-2 flex flex-col'>
               <Link
+                onClick={handleOpen}
                 className='hover:bg-slate-200 dark:hover:bg-slate-900 px-4 py-2 rounded'
                 href={`/`}
               >
                 Home
               </Link>
               <Link
+                onClick={handleOpen}
                 className='hover:bg-slate-200 dark:hover:bg-slate-900 px-4 py-2 rounded'
                 href={`/about`}
               >
                 Company
               </Link>
               <Link
+                onClick={handleOpen}
                 className='hover:bg-slate-200 dark:hover:bg-slate-900 px-4 py-2 rounded'
                 href={`/services`}
               >
                 Services
               </Link>
               <Link
+                onClick={handleOpen}
                 className='hover:bg-slate-200 dark:hover:bg-slate-900 px-4 py-2 rounded'
                 href={`/contact`}
               >
