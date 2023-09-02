@@ -16,7 +16,7 @@ const Navbar = ({}: NavbarProps): JSX.Element => {
   };
 
   return (
-    <header className='flex relative justify-between items-center px-4 py-6 sm:px-10'>
+    <header className='flex relative justify-between items-center px-4 py-6 sm:px-10 z-50'>
       <Logo />
       <nav className='flex items-center space-x-4'>
         <div className='space-x-4 hidden sm:flex'>
