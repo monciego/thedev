@@ -6,7 +6,7 @@ export default function About() {
     <div className='relative mb-16'>
       <div className='lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2  lg:gap-24 lg:items-start '>
         <div className='relative mx-auto max-w-lg px-4 sm:max-w-3xl sm:px-6 lg:px-0'>
-          <div className='pt-10 sm:pt-16 lg:pt-20'>
+          <div className='pt-6 sm:pt-16'>
             <h2 className='text-3xl text-gray-900 dark:text-white font-extrabold tracking-tight sm:text-4xl'>
               On a mission to empower startups and small businesses
             </h2>
