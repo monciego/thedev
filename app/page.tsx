@@ -1,6 +1,11 @@
 import { syncopate } from './fonts';
 import Image from 'next/image';
 import hero from './assets/hero.png';
+import react from './assets/react.svg';
+import vue from './assets/vue.svg';
+import laravel from './assets/laravel.svg';
+import inertia from './assets/inertia.svg';
+import figma from './assets/figma.svg';
 import { Button } from '@/components/ui/button';
 import {
   Pencil2Icon,
@@ -192,7 +197,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer>
+      <footer className='border-t border-slate-900'>
         <div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8'>
           <div className='flex justify-center space-x-6 md:order-2'>
             <a
